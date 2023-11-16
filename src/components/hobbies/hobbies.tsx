@@ -1,63 +1,71 @@
+import {
+  HobbiesContainer,
+  HobbiesIconDiv,
+  HobbiesInfoContainer,
+  HobbiesInfoDiv,
+  HobbiesPlantDiv,
+  HobbiesSetDiv,
+  HobbiesTitle,
+  InvertImg,
+  PlantImg,
+} from "./hobbies.Styled";
+
 export const Hobbies = () => {
   return (
-    <div>
-      <div>
+    <HobbiesContainer id="hobbies_container">
+      <HobbiesTitle id="hobbies_title">
         <h1>HOBBIES</h1>
-      </div>
-      <div style={{ display: "flex" }}>
-        <div>
-          <div>
+      </HobbiesTitle>
+      <HobbiesInfoContainer id="hobbies_info_container">
+        <HobbiesSetDiv>
+          <HobbiesInfoDiv>
             <img
               style={{ maxWidth: "50px" }}
               src="assets/movies.png"
               alt="movies"
             ></img>
             <h4>Movies</h4>
-          </div>
-          <div>
+          </HobbiesInfoDiv>
+          <HobbiesInfoDiv>
             <img
               style={{ maxWidth: "50px" }}
               src="assets/cooking.png"
               alt="cooking"
             ></img>
             <h4>Cooking</h4>
-          </div>
-          <div>
+          </HobbiesInfoDiv>
+          <HobbiesInfoDiv>
             <img
               style={{ maxWidth: "50px" }}
               src="assets/reading.png"
               alt="reading"
             ></img>
             <h4>Reading</h4>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
+          </HobbiesInfoDiv>
+        </HobbiesSetDiv>
+        <HobbiesSetDiv>
+          <HobbiesInfoDiv>
+            <InvertImg
               style={{ maxWidth: "50px" }}
               src="assets/travel.png"
               alt="travel"
-            ></img>
+            ></InvertImg>
             <h4>Travel</h4>
-          </div>
-          <div>
+          </HobbiesInfoDiv>
+          <HobbiesIconDiv>
             <img
               style={{ maxWidth: "50px" }}
               src="assets/skin_care.png"
               alt="skin_care"
             ></img>
             <h4>Enjoy learning about skin care</h4>
-          </div>
-          <div>
-            <img
-              style={{ maxWidth: "50px" }}
-              src="assets/plant.png"
-              alt="plant"
-            ></img>
+          </HobbiesIconDiv>
+          <HobbiesPlantDiv>
+            <PlantImg src="assets/plant.png" alt="plant"></PlantImg>
             <h4>Plant cultivation</h4>
-          </div>
-        </div>
-      </div>
-    </div>
+          </HobbiesPlantDiv>
+        </HobbiesSetDiv>
+      </HobbiesInfoContainer>
+    </HobbiesContainer>
   );
 };
