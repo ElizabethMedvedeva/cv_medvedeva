@@ -11,13 +11,13 @@ export const SkillsDiv = styled.div`
 `;
 export const SkillContainer = styled.div`
   display: flex;
-  justify-content: space-around;
   align-items: center;
   margin: 20px 0;
+  h3 {
+    margin: 0 0 0 30px;
+  }
 `;
-export const SkillImgDiv = styled.div`
-  margin: 0 auto;
-`;
+export const SkillImgDiv = styled.div``;
 
 export const SkillImg = styled.img`
   max-width: 40px;
