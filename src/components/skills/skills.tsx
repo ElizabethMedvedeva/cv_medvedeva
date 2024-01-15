@@ -15,7 +15,6 @@ export const Skills = () => {
       </TitleSkillsDiv>
       <SkillsDiv>
         <SkillContainer id="skill-container">
-          <h3>React</h3>
           <SkillImgDiv id="skill-img_div">
             <SkillImg
               id="skill-img_react"
@@ -23,9 +22,9 @@ export const Skills = () => {
               alt="react"
             ></SkillImg>
           </SkillImgDiv>
+          <h3>React</h3>
         </SkillContainer>
         <SkillContainer id="skill-container">
-          <h3>Redux</h3>
           <SkillImgDiv id="skill-img_div">
             <SkillImg
               id="skill-img_redux"
@@ -33,9 +32,9 @@ export const Skills = () => {
               alt="redux"
             ></SkillImg>
           </SkillImgDiv>
+          <h3>Redux</h3>
         </SkillContainer>
         <SkillContainer id="skill-container">
-          <h3>Typescript</h3>
           <SkillImgDiv id="skill-img_div">
             <SkillImg
               id="skill-img_typescript"
@@ -43,9 +42,9 @@ export const Skills = () => {
               alt="typescript"
             ></SkillImg>
           </SkillImgDiv>
+          <h3>Typescript</h3>
         </SkillContainer>
         <SkillContainer id="skill-container">
-          <h3>JavaScript</h3>
           <SkillImgDiv id="skill-img_div">
             <SkillImg
               id="skill-img_javascript"
@@ -53,6 +52,7 @@ export const Skills = () => {
               alt="javascript"
             ></SkillImg>
           </SkillImgDiv>
+          <h3>JavaScript</h3>
         </SkillContainer>
       </SkillsDiv>
     </SkillsMain>
