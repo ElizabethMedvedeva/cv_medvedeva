@@ -9,6 +9,7 @@ import {
   FirstRow,
   FirstSRowContainer,
   MainContainer,
+  MainTitle,
   MainWrapper,
   SecondRow,
 } from "./main.Styled";
@@ -17,10 +18,10 @@ export const Main = () => {
   return (
     <MainContainer id="main_container">
       <MainWrapper id="main_wrapper">
-        <div>
+        <MainTitle>
           <h1>ELIZAVETA MEDVEDEVA</h1>
           <h3>Frontend Developer</h3>
-        </div>
+        </MainTitle>
         <FirstRow id="first_row">
           <FirstSRowContainer id="first_row_container">
             <Skills />

@@ -9,6 +9,7 @@ export const HobbiesTitle = styled.div`
   margin-bottom: 30px;
   h1 {
     color: #a280ff;
+    font-family: "Caladea", serif;
   }
 `;
 

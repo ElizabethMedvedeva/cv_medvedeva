@@ -1,12 +1,18 @@
-import { ContactContainer, ContactImg, ContactImgDiv } from "./contacts.Styled";
+import {
+  ContactContainer,
+  ContactContent,
+  ContactImg,
+  ContactImgDiv,
+  ContactTitle,
+} from "./contacts.Styled";
 
 export const Contacts = () => {
   return (
     <div>
-      <div>
+      <ContactTitle>
         <h1>CONTACTS</h1>
-      </div>
-      <div>
+      </ContactTitle>
+      <ContactContent>
         <ContactContainer id="skill-container">
           <ContactImgDiv id="skill-img_div">
             <ContactImg
@@ -37,7 +43,7 @@ export const Contacts = () => {
           </ContactImgDiv>
           <a>linkidin</a>
         </ContactContainer>
-      </div>
+      </ContactContent>
     </div>
   );
 };

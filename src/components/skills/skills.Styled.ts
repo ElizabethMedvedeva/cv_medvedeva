@@ -3,6 +3,7 @@ export const SkillsMain = styled.div``;
 
 export const TitleSkillsDiv = styled.div`
   h1 {
+    font-family: "Caladea", serif;
     color: #a280ff;
   }
 `;
@@ -15,6 +16,7 @@ export const SkillContainer = styled.div`
   margin: 20px 0;
   h3 {
     margin: 0 0 0 30px;
+    color: #ffffff;
   }
 `;
 export const SkillImgDiv = styled.div``;

@@ -1,4 +1,8 @@
-import { EducationContainer, EducationTitle } from "./education.Styled";
+import {
+  EducationContainer,
+  EducationContent,
+  EducationTitle,
+} from "./education.Styled";
 
 export const Education = () => {
   return (
@@ -6,7 +10,7 @@ export const Education = () => {
       <EducationTitle id="education_title">
         <h1>EDUCATION</h1>
       </EducationTitle>
-      <div>
+      <EducationContent>
         <div>
           <img></img>
           <h4>TeachMeSkills</h4>
@@ -25,7 +29,7 @@ export const Education = () => {
           <h5>Bachelor’s degree</h5>
           <h5>Faculty of Math and Natural Sciences</h5>
         </div>
-      </div>
+      </EducationContent>
     </EducationContainer>
   );
 };

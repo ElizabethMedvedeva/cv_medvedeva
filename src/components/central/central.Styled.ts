@@ -11,23 +11,23 @@ export const CentralContainer = styled.div`
 export const SetOfTwoIcons = styled.div`
   display: flex;
   flex-direction: column;
-  height: 450px;
+  height: 400px;
   justify-content: space-between;
 `;
 
 export const CentralLogoWrapper = styled.div`
-  max-width: 100px;
+  max-width: 80px;
   margin: 0 auto;
 `;
 
 export const CentralLogo = styled.div`
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 50px;
 `;
 export const SetOfThreeIcons = styled.div`
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 400px;
   justify-content: space-around;
 `;
 
@@ -36,13 +36,13 @@ export const PolaroidImg = styled.img`
 `;
 
 export const HeadphoneLogoWrapper = styled.div`
-  max-width: 200px;
+  max-width: 150px;
 `;
 export const NotebookLogoWrapper = styled.div`
-  max-width: 150px;
+  max-width: 125px;
   margin: 0 auto;
 `;
 
 export const StackLogoWrapper = styled.div`
-  max-width: 150px;
+  max-width: 125px;
 `;

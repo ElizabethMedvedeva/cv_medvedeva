@@ -5,6 +5,7 @@ export const LanguageTitle = styled.div`
   margin-bottom: 30px;
   h1 {
     color: #a280ff;
+    font-family: "Caladea", serif;
   }
 `;
 export const LanguagesList = styled.div`
