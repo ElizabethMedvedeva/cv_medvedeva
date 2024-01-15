@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   background-color: #1c2120;
-  width: 100%;
+  max-width: 1170px;
   height: 100%;
   min-height: 100vh;
+  margin: 0 auto;
 `;
 
 export const MainWrapper = styled.div`
@@ -13,10 +14,13 @@ export const MainWrapper = styled.div`
 
 export const FirstRow = styled.div`
   padding-top: 40px;
-  display: flex;
-  align-items: center;
   width: 100%;
-  justify-content: space-around;
+`;
+export const FirstSRowContainer = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
 `;
 export const SecondRow = styled.div`
   display: flex;

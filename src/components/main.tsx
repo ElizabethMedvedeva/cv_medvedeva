@@ -5,7 +5,13 @@ import { Education } from "./education/education";
 import { Hobbies } from "./hobbies/hobbies";
 import { Languages } from "./languages/languages";
 import { Skills } from "./skills/skills";
-import { FirstRow, MainContainer, MainWrapper, SecondRow } from "./main.Styled";
+import {
+  FirstRow,
+  FirstSRowContainer,
+  MainContainer,
+  MainWrapper,
+  SecondRow,
+} from "./main.Styled";
 
 export const Main = () => {
   return (
@@ -16,9 +22,11 @@ export const Main = () => {
           <h3>Frontend Developer</h3>
         </div>
         <FirstRow id="first_row">
-          <Skills />
-          <About />
-          <Contacts />
+          <FirstSRowContainer id="first_row_container">
+            <Skills />
+            <About />
+            <Contacts />
+          </FirstSRowContainer>
         </FirstRow>
         <Central />
         <SecondRow id="second_row">
