@@ -1,7 +1,11 @@
+import { EducationContainer, EducationTitle } from "./education.Styled";
+
 export const Education = () => {
   return (
-    <div>
-      <h1>Education</h1>
+    <EducationContainer id="education_container">
+      <EducationTitle id="education_title">
+        <h1>EDUCATION</h1>
+      </EducationTitle>
       <div>
         <div>
           <img></img>
@@ -22,6 +26,6 @@ export const Education = () => {
           <h5>Faculty of Math and Natural Sciences</h5>
         </div>
       </div>
-    </div>
+    </EducationContainer>
   );
 };

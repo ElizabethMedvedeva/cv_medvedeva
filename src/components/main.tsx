@@ -5,24 +5,28 @@ import { Education } from "./education/education";
 import { Hobbies } from "./hobbies/hobbies";
 import { Languages } from "./languages/languages";
 import { Skills } from "./skills/skills";
-import { FirstRow, MainContainer } from "./main.Styled";
+import { FirstRow, MainContainer, MainWrapper, SecondRow } from "./main.Styled";
 
 export const Main = () => {
   return (
-    <MainContainer>
-      <div>
-        <h1>ELIZAVETA MEDVEDEVA</h1>
-        <h3>Frontend Developer</h3>
-      </div>
-      <FirstRow>
-        <Skills />
-        <About />
-        <Contacts />
-      </FirstRow>
-      <Central />
-      <Hobbies />
-      <Languages />
-      <Education />
+    <MainContainer id="main_container">
+      <MainWrapper id="main_wrapper">
+        <div>
+          <h1>ELIZAVETA MEDVEDEVA</h1>
+          <h3>Frontend Developer</h3>
+        </div>
+        <FirstRow id="first_row">
+          <Skills />
+          <About />
+          <Contacts />
+        </FirstRow>
+        <Central />
+        <SecondRow id="second_row">
+          <Hobbies />
+          <Education />
+          <Languages />
+        </SecondRow>
+      </MainWrapper>
     </MainContainer>
   );
 };

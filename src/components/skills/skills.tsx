@@ -3,12 +3,13 @@ import {
   SkillImg,
   SkillImgDiv,
   SkillsDiv,
+  SkillsMain,
   TitleSkillsDiv,
 } from "./skills.Styled";
 
 export const Skills = () => {
   return (
-    <div>
+    <SkillsMain id="skills">
       <TitleSkillsDiv>
         <h1>SKILLS</h1>
       </TitleSkillsDiv>
@@ -54,6 +55,6 @@ export const Skills = () => {
           </SkillImgDiv>
         </SkillContainer>
       </SkillsDiv>
-    </div>
+    </SkillsMain>
   );
 };

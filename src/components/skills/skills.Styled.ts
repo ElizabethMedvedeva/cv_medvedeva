@@ -1,4 +1,7 @@
 import styled from "styled-components";
+export const SkillsMain = styled.div`
+  max-width: 200px;
+`;
 
 export const TitleSkillsDiv = styled.div`
   h1 {
