@@ -1,3 +1,7 @@
+import { useState } from "react";
+
+import { AnimatedModal } from "../modal/modal";
+
 import {
   CentralContainer,
   CentralLogo,
@@ -11,12 +15,23 @@ import {
 } from "./central.Styled";
 
 export const Central = () => {
+  const [opened, setOpened] = useState<boolean>(false);
   return (
     <CentralContainer id="central_container">
       <SetOfTwoIcons>
-        <HeadphoneLogoWrapper id="headphone_logo_wrapper">
-          <img src="assets/headphone.png" alt="headphone"></img>
-        </HeadphoneLogoWrapper>
+        <div>
+          <HeadphoneLogoWrapper
+            id="headphone_logo_wrapper"
+            onClick={() => setOpened(true)}
+          >
+            <img src="assets/headphone.png" alt="headphone"></img>
+          </HeadphoneLogoWrapper>
+          <AnimatedModal opened={opened} onClose={() => setOpened(false)}>
+            <div>
+              <h3>jncksjnvn</h3>
+            </div>
+          </AnimatedModal>
+        </div>
         <NotebookLogoWrapper id="notebook_logo_wrapper">
           <img src="assets/notebook.png" alt="notebook"></img>
         </NotebookLogoWrapper>
