@@ -10,11 +10,13 @@ export const MainContainer = styled.div`
 
 export const MainWrapper = styled.div`
   margin: 0 20px;
+  display: flex;
+  align-items: center;
 `;
 export const MainTitle = styled.div`
   color: #ffffff;
   h1 {
-    font-size: 36px;
+    font-size: 30px;
     padding: 15px 0;
   }
   h3 {

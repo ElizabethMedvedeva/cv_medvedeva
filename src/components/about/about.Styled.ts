@@ -9,6 +9,7 @@ export const AboutContainer = styled.div`
 export const ImgDiv = styled.div`
   max-width: 250px;
   height: auto;
+  margin: 0 auto;
 `;
 
 export const Photo = styled.img`
