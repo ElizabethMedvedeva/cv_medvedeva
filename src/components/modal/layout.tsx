@@ -29,7 +29,8 @@ export const Layout = ({ opened, children, onClose }: ILayout) => {
   const overlayRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const [animationIn, setAnimationIn] = useState<boolean>(false);
-
+  console.log(overlayRef, "overlay");
+  console.log(contentRef, "content");
   useEffect(() => {
     setAnimationIn(opened);
   }, [opened]);

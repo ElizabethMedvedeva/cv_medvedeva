@@ -30,7 +30,6 @@ export const AnimatedModal = ({
   opened,
   onClose,
 }: IAnimatedModal) => {
-  console.log(children, "AnimatedModal children");
   const mounted = useMount(opened);
   if (!mounted) {
     return null;

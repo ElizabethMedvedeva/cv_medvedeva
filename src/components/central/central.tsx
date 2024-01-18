@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { Hobbies } from "../hobbies/hobbies";
+import { Languages } from "../languages/languages";
 import { AnimatedModal } from "../modal/modal";
 
 import {
@@ -19,7 +21,7 @@ export const Central = () => {
   return (
     <CentralContainer id="central_container">
       <SetOfTwoIcons>
-        <div>
+        <div id="hobbies_modal">
           <HeadphoneLogoWrapper
             id="headphone_logo_wrapper"
             onClick={() => setOpened(true)}
@@ -28,13 +30,23 @@ export const Central = () => {
           </HeadphoneLogoWrapper>
           <AnimatedModal opened={opened} onClose={() => setOpened(false)}>
             <div>
-              <h3>jncksjnvn</h3>
+              <Hobbies />
             </div>
           </AnimatedModal>
         </div>
-        <NotebookLogoWrapper id="notebook_logo_wrapper">
-          <img src="assets/notebook.png" alt="notebook"></img>
-        </NotebookLogoWrapper>
+        <div id="education_modal">
+          <NotebookLogoWrapper
+            id="notebook_logo_wrapper"
+            onClick={() => setOpened(true)}
+          >
+            <img src="assets/notebook.png" alt="notebook"></img>
+          </NotebookLogoWrapper>
+          <AnimatedModal opened={opened} onClose={() => setOpened(false)}>
+            <div>
+              <Languages />
+            </div>
+          </AnimatedModal>
+        </div>
       </SetOfTwoIcons>
       <CentralLogo id="central_logo">
         <img src="assets/laptop.png" alt="laptop"></img>

@@ -4,7 +4,6 @@ interface IPortal {
   children: ReactNode;
 }
 export const Portal = ({ children }: IPortal) => {
-  console.log(children, "Portal children");
   const [container] = useState(() => document.createElement("div"));
   useEffect(() => {
     document.body.appendChild(container);
