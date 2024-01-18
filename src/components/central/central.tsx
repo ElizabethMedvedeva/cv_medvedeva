@@ -18,17 +18,28 @@ import {
 
 export const Central = () => {
   const [opened, setOpened] = useState<boolean>(false);
+  const [contentMarker, setContentMarker] = useState<string>("");
   return (
     <CentralContainer id="central_container">
       <SetOfTwoIcons>
         <div id="hobbies_modal">
           <HeadphoneLogoWrapper
             id="headphone_logo_wrapper"
-            onClick={() => setOpened(true)}
+            onClick={() => {
+              setContentMarker("hobbies");
+              setOpened(true);
+            }}
           >
             <img src="assets/headphone.png" alt="headphone"></img>
           </HeadphoneLogoWrapper>
-          <AnimatedModal opened={opened} onClose={() => setOpened(false)}>
+          <AnimatedModal
+            contentMarker={contentMarker}
+            contentName="hobbies"
+            opened={opened}
+            onClose={() => {
+              setOpened(false);
+            }}
+          >
             <div>
               <Hobbies />
             </div>
@@ -37,11 +48,21 @@ export const Central = () => {
         <div id="education_modal">
           <NotebookLogoWrapper
             id="notebook_logo_wrapper"
-            onClick={() => setOpened(true)}
+            onClick={() => {
+              setContentMarker("hobbies");
+              setOpened(true);
+            }}
           >
             <img src="assets/notebook.png" alt="notebook"></img>
           </NotebookLogoWrapper>
-          <AnimatedModal opened={opened} onClose={() => setOpened(false)}>
+          <AnimatedModal
+            contentMarker={contentMarker}
+            contentName="education"
+            opened={opened}
+            onClose={() => {
+              setOpened(false);
+            }}
+          >
             <div>
               <Languages />
             </div>

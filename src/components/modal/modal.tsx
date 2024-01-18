@@ -8,6 +8,8 @@ import { Portal } from "./portal";
 interface IAnimatedModal {
   children: ReactNode;
   opened: boolean;
+  contentMarker: string;
+  contentName: string;
   onClose: () => void;
 }
 
@@ -28,9 +30,11 @@ export const useMount = (opened: boolean) => {
 export const AnimatedModal = ({
   children,
   opened,
+  contentMarker,
+  contentName,
   onClose,
 }: IAnimatedModal) => {
-  const mounted = useMount(opened);
+  const mounted = useMount(opened && contentMarker === contentName);
   if (!mounted) {
     return null;
   }
