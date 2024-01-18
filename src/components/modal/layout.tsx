@@ -3,7 +3,8 @@ import { CSSTransition } from "react-transition-group";
 
 import { ANIMATION_TIME } from "../const";
 
-import animationStyles from "./animationModal.css";
+import animationStyles from "./animationModal.module.css";
+import styles from "./styles.module.css";
 
 interface ILayout {
   opened: boolean;
@@ -17,9 +18,16 @@ const overLayAnimation = {
   exitActive: animationStyles.overlayExitActive,
 };
 
+const contentAnimation = {
+  enter: animationStyles.contentEnter,
+  enterActive: animationStyles.contentEnterActive,
+  exit: animationStyles.contentExit,
+  exitActive: animationStyles.contentExitActive,
+};
+
 export const Layout = ({ opened, children, onClose }: ILayout) => {
-  const overlayRef = useRef();
-  const contentRef = useRef();
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
   const [animationIn, setAnimationIn] = useState<boolean>(false);
 
   useEffect(() => {
@@ -27,7 +35,7 @@ export const Layout = ({ opened, children, onClose }: ILayout) => {
   }, [opened]);
 
   return (
-    <div>
+    <div className={styles.container}>
       <CSSTransition
         in={animationIn}
         nodeRef={overlayRef}
@@ -36,7 +44,23 @@ export const Layout = ({ opened, children, onClose }: ILayout) => {
         unmountOnExit
         classNames={overLayAnimation}
       >
-        <div ref={overlayRef} className={styled.overlay} onClick={onClose}></div>
+        <div
+          ref={overlayRef}
+          className={styles.overlay}
+          onClick={onClose}
+        ></div>
+      </CSSTransition>
+      <CSSTransition
+        in={animationIn}
+        nodeRef={contentRef}
+        timeout={ANIMATION_TIME}
+        mountOnEnter
+        unmountOnExit
+        classNames={contentAnimation}
+      >
+        <div ref={contentRef} className={styles.content}>
+          {children}
+        </div>
       </CSSTransition>
     </div>
   );
