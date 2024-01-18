@@ -2,6 +2,7 @@ import { ReactNode, useEffect, useState } from "react";
 
 import { ANIMATION_TIME } from "../const";
 
+import { Layout } from "./layout";
 import { Portal } from "./portal";
 
 interface IAnimatedModal {
@@ -34,5 +35,11 @@ export const AnimatedModal = ({
   if (!mounted) {
     return null;
   }
-  return <Portal>{children}</Portal>;
+  return (
+    <Portal>
+      <Layout onClose={onClose} opened={opened}>
+        {children}
+      </Layout>
+    </Portal>
+  );
 };

@@ -1,31 +1,43 @@
 .contentEnter {
-
+  opacity: 0;
+  transform: scale(0.01);
 }
 
 .contentEnterActive {
-
+  transition:
+    opacity 100ms ease-out 200ms,
+    transform 100ms ease-out 200ms;
+  opacity: 1;
+  transform: scale(1);
 }
 
-.contentExit{
-
+.contentExit {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .contentExitActive {
-
+  opacity: 0;
+  transform: scale(0.01);
+  transition:
+    opacity 300ms ease-out,
+    transform 300ms ease-out;
 }
 
 .overlayEnter {
-
+  opacity: 0;
 }
 
 .overlayEnterActive {
-
+  transition: opacity 300ms ease-out;
+  opacity: 1;
 }
 
-.overlayExit{
-
+.overlayExit {
+  opacity: 1;
 }
 
 .overlayEnterActive {
-    
+  opacity: 0;
+  transition: opacity 300ms ease-out;
 }
