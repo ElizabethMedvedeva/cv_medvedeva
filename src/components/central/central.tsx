@@ -13,7 +13,6 @@ import {
   CentralLogoWrapper,
   HeadphoneLogoWrapper,
   NotebookLogoWrapper,
-  PolaroidImg,
   SetOfThreeIcons,
   SetOfTwoIcons,
   StackLogoWrapper,
