@@ -20,7 +20,6 @@ export const Main = () => {
       <MainWrapper>
         <div>
           <About />
-          <Contacts />
         </div>
         <div>
           <Central />

@@ -1,8 +1,11 @@
 import { useState } from "react";
 
+import { Contacts } from "../contacts/contacts";
+import { Education } from "../education/education";
 import { Hobbies } from "../hobbies/hobbies";
 import { Languages } from "../languages/languages";
 import { AnimatedModal } from "../modal/modal";
+import { Skills } from "../skills/skills";
 
 import {
   CentralContainer,
@@ -49,7 +52,7 @@ export const Central = () => {
           <NotebookLogoWrapper
             id="notebook_logo_wrapper"
             onClick={() => {
-              setContentMarker("hobbies");
+              setContentMarker("education");
               setOpened(true);
             }}
           >
@@ -65,23 +68,82 @@ export const Central = () => {
           >
             <div>
               <Languages />
+              <Education />
             </div>
           </AnimatedModal>
         </div>
       </SetOfTwoIcons>
       <CentralLogo id="central_logo">
-        <img src="assets/laptop.png" alt="laptop"></img>
+        <div>
+          <div
+            onClick={() => {
+              setContentMarker("projects");
+              setOpened(true);
+            }}
+          >
+            <img src="assets/laptop.png" alt="laptop"></img>
+          </div>
+          <AnimatedModal
+            contentMarker={contentMarker}
+            contentName="projects"
+            opened={opened}
+            onClose={() => {
+              setOpened(false);
+            }}
+          >
+            <div>
+              <h2>Projects</h2>
+            </div>
+          </AnimatedModal>
+        </div>
       </CentralLogo>
       <SetOfThreeIcons>
-        <StackLogoWrapper id="central_logo_wrapper">
-          <img src="assets/stack.png" alt="stack"></img>
-        </StackLogoWrapper>
-        <CentralLogoWrapper id="central_logo_wrapper">
-          <PolaroidImg src="assets/polaroid.png" alt="polaroid"></PolaroidImg>
-        </CentralLogoWrapper>
-        <CentralLogoWrapper id="central_logo_wrapper">
-          <img id="polaroid" src="assets/phone.png" alt="phone"></img>
-        </CentralLogoWrapper>
+        <div>
+          <StackLogoWrapper
+            id="central_logo_wrapper"
+            onClick={() => {
+              setContentMarker("skills");
+              setOpened(true);
+            }}
+          >
+            <img src="assets/stack.png" alt="stack"></img>
+          </StackLogoWrapper>
+          <AnimatedModal
+            contentMarker={contentMarker}
+            contentName="skills"
+            opened={opened}
+            onClose={() => {
+              setOpened(false);
+            }}
+          >
+            <div>
+              <Skills />
+            </div>
+          </AnimatedModal>
+        </div>
+        <div>
+          <CentralLogoWrapper
+            id="central_logo_wrapper"
+            onClick={() => {
+              setContentMarker("contacts");
+              setOpened(true);
+            }}
+          >
+            <img id="polaroid" src="assets/phone.png" alt="phone"></img>
+          </CentralLogoWrapper>
+          <AnimatedModal
+            contentMarker={contentMarker}
+            contentName="contacts"
+            opened={opened}
+            onClose={() => {
+              setOpened(false);
+            }}
+          >
+            <div>
+              <Contacts />
+            </div>
+          </AnimatedModal>
+        </div>
       </SetOfThreeIcons>
     </CentralContainer>
   );
