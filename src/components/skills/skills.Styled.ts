@@ -2,6 +2,7 @@ import styled from "styled-components";
 export const SkillsMain = styled.div``;
 
 export const TitleSkillsDiv = styled.div`
+  text-align: center;
   h1 {
     font-family: "Caladea", serif;
     color: #a280ff;
