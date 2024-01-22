@@ -1,14 +1,40 @@
 import styled from "styled-components";
 
-export const EducationContainer = styled.div``;
+import { HELIOTROPE_COLORS, WHITE_COLORS } from "../const";
+
+export const EducationContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export const EducationTitle = styled.div`
   margin-bottom: 30px;
   h1 {
-    color: #a280ff;
+    color: ${HELIOTROPE_COLORS};
     font-family: "Caladea", serif;
   }
 `;
 export const EducationContent = styled.div`
-  color: #ffffff;
+  color: ${WHITE_COLORS};
+`;
+
+export const Bookmark = styled.div`
+  display: flex;
+`;
+export const Rectangle = styled.div`
+  width: 80px;
+  height: 0;
+  border-bottom: 30px solid ${HELIOTROPE_COLORS};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: ${WHITE_COLORS};
+`;
+export const Triangle = styled.div`
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid ${HELIOTROPE_COLORS};
 `;
