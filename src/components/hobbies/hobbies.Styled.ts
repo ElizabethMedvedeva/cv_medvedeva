@@ -9,7 +9,7 @@ export const HobbiesContainer = styled.div`
 `;
 
 export const HobbiesTitle = styled.div`
-  margin-bottom: 30px;
+  margin: 0 auto;
   h1 {
     color: ${HELIOTROPE_COLORS};
     font-family: "Caladea", serif;
@@ -19,6 +19,7 @@ export const HobbiesTitle = styled.div`
 export const HobbiesInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 `;
 
 export const HobbiesSetDiv = styled.div`
