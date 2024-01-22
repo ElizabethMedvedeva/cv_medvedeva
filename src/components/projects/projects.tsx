@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <div>
       <ProjectTitle>
-        <h1>PROJECTS</h1>
+        <h1>PET PROJECTS</h1>
       </ProjectTitle>
       <ProjectsContainer>
         <ProjectLink>
