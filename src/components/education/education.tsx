@@ -2,6 +2,8 @@ import {
   Bookmark,
   EducationContainer,
   EducationContent,
+  EducationPlace,
+  EducationStage,
   EducationTitle,
   Rectangle,
   Triangle,
@@ -14,7 +16,7 @@ export const Education = () => {
         <h1>EDUCATION</h1>
       </EducationTitle>
       <EducationContent>
-        <div>
+        <EducationStage>
           <Bookmark>
             <Rectangle>
               <h6>Jun 2023 -</h6>
@@ -22,10 +24,12 @@ export const Education = () => {
             </Rectangle>
             <Triangle></Triangle>
           </Bookmark>
-          <h4>TeachMeSkills</h4>
-          <h5>Frontend Developer</h5>
-        </div>
-        <div>
+          <EducationPlace>
+            <h4>TeachMeSkills</h4>
+            <h5>Frontend Developer</h5>
+          </EducationPlace>
+        </EducationStage>
+        <EducationStage>
           <Bookmark>
             <Rectangle>
               <h6>2018 -</h6>
@@ -33,12 +37,13 @@ export const Education = () => {
             </Rectangle>
             <Triangle></Triangle>
           </Bookmark>
-          <h4>
-            Graduate School of the National Academy of Sciences of Belarus
-          </h4>
-          <h5>Master degree of Chemistry</h5>
-        </div>
-        <div>
+          <EducationPlace>
+            <h4>Graduate School of the National</h4>
+            <h4>Academy of Sciences of Belarus</h4>
+            <h5>Master degree of Chemistry</h5>
+          </EducationPlace>
+        </EducationStage>
+        <EducationStage>
           <Bookmark>
             <Rectangle>
               <h6>2014 -</h6>
@@ -46,10 +51,13 @@ export const Education = () => {
             </Rectangle>
             <Triangle></Triangle>
           </Bookmark>
-          <h4>Mogilev State University named by A. A. Kuleshova</h4>
-          <h5>Bachelor’s degree</h5>
-          <h5>Faculty of Math and Natural Sciences</h5>
-        </div>
+          <EducationPlace>
+            <h4>Mogilev State University </h4>
+            <h4>named by A. A. Kuleshova</h4>
+            <h5>Bachelor’s degree</h5>
+            <h5>Faculty of Math and Natural Sciences</h5>
+          </EducationPlace>
+        </EducationStage>
       </EducationContent>
     </EducationContainer>
   );

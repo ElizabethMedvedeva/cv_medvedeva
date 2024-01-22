@@ -21,6 +21,7 @@ export const EducationContent = styled.div`
 
 export const Bookmark = styled.div`
   display: flex;
+  margin-right: 20px;
 `;
 export const Rectangle = styled.div`
   width: 80px;
@@ -37,4 +38,20 @@ export const Triangle = styled.div`
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 20px solid ${HELIOTROPE_COLORS};
+`;
+
+export const EducationStage = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+export const EducationPlace = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  h4 {
+    margin-bottom: 2px;
+  }
 `;
