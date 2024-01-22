@@ -14,6 +14,13 @@ export const SetOfTwoIcons = styled.div`
   height: 400px;
   justify-content: space-between;
 `;
+export const ModalDiv = styled.div`
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
 
 export const CentralLogoWrapper = styled.div`
   max-width: 80px;

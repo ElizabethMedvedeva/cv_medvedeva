@@ -6,6 +6,8 @@ export const MainContainer = styled.div`
   height: 100%;
   min-height: 100vh;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 `;
 
 export const MainWrapper = styled.div`

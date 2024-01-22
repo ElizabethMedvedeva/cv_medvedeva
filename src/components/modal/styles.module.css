@@ -36,4 +36,7 @@
   z-index: 3;
   min-width: 400px;
   min-height: 600px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }

@@ -12,6 +12,7 @@ import {
   CentralLogo,
   CentralLogoWrapper,
   HeadphoneLogoWrapper,
+  ModalDiv,
   NotebookLogoWrapper,
   SetOfThreeIcons,
   SetOfTwoIcons,
@@ -24,13 +25,14 @@ export const Central = () => {
   return (
     <CentralContainer id="central_container">
       <SetOfTwoIcons>
-        <div id="hobbies_modal">
+        <ModalDiv id="hobbies_modal">
           <HeadphoneLogoWrapper
             id="headphone_logo_wrapper"
             onClick={() => {
               setContentMarker("hobbies");
               setOpened(true);
             }}
+            style={{ cursor: "pointer" }}
           >
             <img src="assets/headphone.png" alt="headphone"></img>
           </HeadphoneLogoWrapper>
@@ -46,8 +48,8 @@ export const Central = () => {
               <Hobbies />
             </div>
           </AnimatedModal>
-        </div>
-        <div id="education_modal">
+        </ModalDiv>
+        <ModalDiv id="education_modal">
           <NotebookLogoWrapper
             id="notebook_logo_wrapper"
             onClick={() => {
@@ -70,10 +72,10 @@ export const Central = () => {
               <Education />
             </div>
           </AnimatedModal>
-        </div>
+        </ModalDiv>
       </SetOfTwoIcons>
       <CentralLogo id="central_logo">
-        <div>
+        <ModalDiv>
           <div
             onClick={() => {
               setContentMarker("projects");
@@ -94,10 +96,10 @@ export const Central = () => {
               <h2>Projects</h2>
             </div>
           </AnimatedModal>
-        </div>
+        </ModalDiv>
       </CentralLogo>
       <SetOfThreeIcons>
-        <div>
+        <ModalDiv>
           <StackLogoWrapper
             id="central_logo_wrapper"
             onClick={() => {
@@ -119,8 +121,8 @@ export const Central = () => {
               <Skills />
             </div>
           </AnimatedModal>
-        </div>
-        <div>
+        </ModalDiv>
+        <ModalDiv>
           <CentralLogoWrapper
             id="central_logo_wrapper"
             onClick={() => {
@@ -142,7 +144,7 @@ export const Central = () => {
               <Contacts />
             </div>
           </AnimatedModal>
-        </div>
+        </ModalDiv>
       </SetOfThreeIcons>
     </CentralContainer>
   );
