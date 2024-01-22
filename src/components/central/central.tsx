@@ -5,6 +5,7 @@ import { Education } from "../education/education";
 import { Hobbies } from "../hobbies/hobbies";
 import { Languages } from "../languages/languages";
 import { AnimatedModal } from "../modal/modal";
+import { Projects } from "../projects/projects";
 import { Skills } from "../skills/skills";
 
 import {
@@ -93,7 +94,7 @@ export const Central = () => {
             }}
           >
             <div>
-              <h2>Projects</h2>
+              <Projects />
             </div>
           </AnimatedModal>
         </ModalDiv>
