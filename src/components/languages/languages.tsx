@@ -13,11 +13,11 @@ export const Languages = () => {
       </LanguageTitle>
       <LanguagesList id="language_list">
         <LanguageDiv id="language_div">
-          <h3> English/</h3>
+          <h3> English&nbsp;/&nbsp;</h3>
           <h4>B2</h4>
         </LanguageDiv>
         <LanguageDiv>
-          <h3> Russian /</h3>
+          <h3> Russian&nbsp;/&nbsp;</h3>
           <h4> Native</h4>
         </LanguageDiv>
       </LanguagesList>
