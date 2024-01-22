@@ -3,47 +3,57 @@ import {
   ContactContent,
   ContactImg,
   ContactImgDiv,
+  ContactLinkDiv,
+  ContactsDiv,
   ContactTitle,
 } from "./contacts.Styled";
 
 export const Contacts = () => {
   return (
-    <div>
+    <ContactsDiv>
       <ContactTitle>
         <h1>CONTACTS</h1>
       </ContactTitle>
       <ContactContent>
-        <ContactContainer id="skill-container">
-          <ContactImgDiv id="skill-img_div">
-            <ContactImg
-              id="skill-img_mail"
-              src="assets/mail.png"
-              alt="react"
-            ></ContactImg>
+        <ContactContainer>
+          <ContactImgDiv>
+            <ContactImg src="assets/mail.png" alt="react"></ContactImg>
           </ContactImgDiv>
-          <a>elizabeth.medvedeva12@gmail.com</a>
+          <ContactLinkDiv>
+            <a
+              href="mailto:elizabeth.medvedeva12@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              elizabeth.medvedeva12@gmail.com
+            </a>
+          </ContactLinkDiv>
         </ContactContainer>
-        <ContactContainer id="skill-container">
-          <ContactImgDiv id="skill-img_div">
-            <ContactImg
-              id="skill-img_github"
-              src="assets/github.png"
-              alt="react"
-            ></ContactImg>
+        <ContactContainer>
+          <ContactImgDiv>
+            <ContactImg src="assets/github.png" alt="react"></ContactImg>
           </ContactImgDiv>
-          <a>/ElizabethMedvedeva</a>
+          <ContactLinkDiv>
+            <a
+              href="https://github.com/ElizabethMedvedeva"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              /ElizabethMedvedeva
+            </a>
+          </ContactLinkDiv>
         </ContactContainer>
-        <ContactContainer id="skill-container">
-          <ContactImgDiv id="skill-img_div">
-            <ContactImg
-              id="skill-img_react"
-              src="assets/linkedin.png"
-              alt="react"
-            ></ContactImg>
+        <ContactContainer>
+          <ContactImgDiv>
+            <ContactImg src="assets/linkedin.png" alt="react"></ContactImg>
           </ContactImgDiv>
-          <a>linkidin</a>
+          <ContactLinkDiv>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              linkidin
+            </a>
+          </ContactLinkDiv>
         </ContactContainer>
       </ContactContent>
-    </div>
+    </ContactsDiv>
   );
 };

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { HELIOTROPE_COLORS } from "../const";
+
 export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,6 +24,6 @@ export const AboutTextDiv = styled.div`
   max-width: 300px;
   margin-top: 20px;
   h4 {
-    color: #a280ff;
+    color: ${HELIOTROPE_COLORS};
   }
 `;

@@ -1,11 +1,14 @@
 import styled from "styled-components";
+
+import { HELIOTROPE_COLORS, WHITE_COLORS } from "../const";
 export const SkillsMain = styled.div``;
 
 export const TitleSkillsDiv = styled.div`
   text-align: center;
+  margin-bottom: 30px;
   h1 {
     font-family: "Caladea", serif;
-    color: #a280ff;
+    color: ${HELIOTROPE_COLORS};
   }
 `;
 export const SkillsDiv = styled.div`
@@ -17,7 +20,7 @@ export const SkillContainer = styled.div`
   margin: 20px 0;
   h3 {
     margin: 0 0 0 30px;
-    color: #ffffff;
+    color: ${WHITE_COLORS};
   }
 `;
 export const SkillImgDiv = styled.div``;
