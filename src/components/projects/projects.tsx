@@ -34,7 +34,7 @@ export const Projects = () => {
         <ProjectLink>
           <h3>🦆</h3>
           <a
-            href="https://elizabethmedvedeva.github.io/mogo-project/dist/index.html"
+            href="https://elizabethmedvedeva.github.io/cv_medvedeva/"
             target="_blank"
             rel="noopener noreferrer"
           >
