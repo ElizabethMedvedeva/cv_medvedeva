@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cv_medvedeva_frontend/static/css/main.978a3958.css",
+    "main.js": "/cv_medvedeva_frontend/static/js/main.0b84b17c.js",
+    "index.html": "/cv_medvedeva_frontend/index.html",
+    "main.978a3958.css.map": "/cv_medvedeva_frontend/static/css/main.978a3958.css.map",
+    "main.0b84b17c.js.map": "/cv_medvedeva_frontend/static/js/main.0b84b17c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.978a3958.css",
+    "static/js/main.0b84b17c.js"
+  ]
+}
