@@ -1,5 +1,6 @@
 import { About } from "./about/about";
 import { Central } from "./central/central";
+import { DownloadButton } from "./shared/button";
 import { MainContainer, MainWrapper } from "./main.Styled";
 
 export const Main = () => {
@@ -8,6 +9,7 @@ export const Main = () => {
       <MainWrapper>
         <div>
           <About />
+          <DownloadButton />
         </div>
         <div>
           <Central />

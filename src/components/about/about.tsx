@@ -15,11 +15,10 @@ export const About = () => {
 
       <AboutTextDiv>
         <h4>
-          I am a highly motivated team player with strong communication skills
-          and a proven ability to meet deadlines. I am actively seeking
-          employment with a forward-thinking company in the field of frontend
-          development to grow as a professional, develop my hard skills, and
-          become an expert in frontend development.
+          Hey there! I&apos;m a Junior Frontend Developer on the lookout for a
+          cool company in the frontend development space. I&apos;m eager to join
+          a forward-thinking team where I can learn and grow both personally and
+          professionally. Let&apos;s build awesome things together!
         </h4>
       </AboutTextDiv>
     </AboutContainer>
