@@ -1,7 +1,7 @@
 {
   "name": "cv_medvedeva_frontend",
   "version": "0.1.0",
-  "homepage": "https://elizabethmedvedeva.github.io/cv_medvedeva/",
+  "homepage": "https://elizabethmedvedeva.github.io/cv_medvedeva",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
