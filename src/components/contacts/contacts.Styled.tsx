@@ -17,10 +17,16 @@ export const ContactTitle = styled.div`
 `;
 export const ContactImgDiv = styled.div`
   margin: 20px;
+  @media (max-width: 390px) {
+    margin: 20px 7px;
+  }
 `;
 export const ContactContent = styled.div`
   margin-top: 30px;
   color: ${WHITE_COLORS};
+  @media (max-width: 390px) {
+    margin: 0 7px;
+  }
 `;
 
 export const ContactImg = styled.img`

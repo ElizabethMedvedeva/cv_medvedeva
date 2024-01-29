@@ -58,11 +58,13 @@ export const EducationPlace = styled.div`
     margin-bottom: 2px;
     @media (max-width: 390px) {
       font-size: 12px;
+      text-align: center;
     }
   }
   h5 {
     @media (max-width: 390px) {
       font-size: 10px;
+      text-align: center;
     }
   }
 `;
