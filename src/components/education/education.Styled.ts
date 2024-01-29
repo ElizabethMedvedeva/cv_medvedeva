@@ -13,6 +13,9 @@ export const EducationTitle = styled.div`
   h1 {
     color: ${HELIOTROPE_COLORS};
     font-family: "Caladea", serif;
+    @media (max-width: 390px) {
+      font-size: 25px;
+    }
   }
 `;
 export const EducationContent = styled.div`
@@ -43,7 +46,7 @@ export const Triangle = styled.div`
 export const EducationStage = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 0 10px 20px 10px;
 `;
 
 export const EducationPlace = styled.div`
@@ -53,5 +56,13 @@ export const EducationPlace = styled.div`
   margin: 0 auto;
   h4 {
     margin-bottom: 2px;
+    @media (max-width: 390px) {
+      font-size: 12px;
+    }
+  }
+  h5 {
+    @media (max-width: 390px) {
+      font-size: 10px;
+    }
   }
 `;

@@ -13,6 +13,10 @@ export const LanguageTitle = styled.div`
   h1 {
     color: ${HELIOTROPE_COLORS};
     font-family: "Caladea", serif;
+    @media (max-width: 390px) {
+      font-size: 25px;
+      margin-top: 10px;
+    }
   }
 `;
 export const LanguagesList = styled.div`
@@ -23,8 +27,14 @@ export const LanguageDiv = styled.div`
   align-items: center;
   h3 {
     color: ${WHITE_COLORS};
+    @media (max-width: 390px) {
+      font-size: 15px;
+    }
   }
   h4 {
     color: ${WHITE_COLORS};
+    @media (max-width: 390px) {
+      font-size: 15px;
+    }
   }
 `;
