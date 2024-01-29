@@ -13,7 +13,7 @@ export const EducationTitle = styled.div`
   h1 {
     color: ${HELIOTROPE_COLORS};
     font-family: "Caladea", serif;
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       font-size: 25px;
     }
   }
@@ -56,13 +56,13 @@ export const EducationPlace = styled.div`
   margin: 0 auto;
   h4 {
     margin-bottom: 2px;
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       font-size: 12px;
       text-align: center;
     }
   }
   h5 {
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       font-size: 10px;
       text-align: center;
     }

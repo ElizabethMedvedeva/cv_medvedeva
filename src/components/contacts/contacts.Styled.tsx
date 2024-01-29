@@ -17,14 +17,14 @@ export const ContactTitle = styled.div`
 `;
 export const ContactImgDiv = styled.div`
   margin: 20px;
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     margin: 20px 5px;
   }
 `;
 export const ContactContent = styled.div`
   margin-top: 30px;
   color: ${WHITE_COLORS};
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     margin: 0 5px;
   }
 `;
