@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cv_medvedeva/static/css/main.40f184b9.css",
+    "main.css": "/cv_medvedeva/static/css/main.ea06fd27.css",
     "main.js": "/cv_medvedeva/static/js/main.d45bc997.js",
     "index.html": "/cv_medvedeva/index.html",
-    "main.40f184b9.css.map": "/cv_medvedeva/static/css/main.40f184b9.css.map",
+    "main.ea06fd27.css.map": "/cv_medvedeva/static/css/main.ea06fd27.css.map",
     "main.d45bc997.js.map": "/cv_medvedeva/static/js/main.d45bc997.js.map"
   },
   "entrypoints": [
-    "static/css/main.40f184b9.css",
+    "static/css/main.ea06fd27.css",
     "static/js/main.d45bc997.js"
   ]
 }
