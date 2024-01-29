@@ -14,12 +14,24 @@ export const MainWrapper = styled.div`
   margin: 0 20px;
   display: flex;
   align-items: center;
+  @media (max-width: 915px) {
+    flex-direction: column;
+  }
 `;
 export const MainTitle = styled.div`
   color: #ffffff;
   h1 {
     font-size: 30px;
     padding: 15px 0;
+    @media (max-width: 1030px) {
+      font-size: 25px;
+    }
+    @media (max-width: 915px) {
+      font-size: 30px;
+    }
+    @media (max-width: 915px) {
+      font-size: 25px;
+    }
   }
   h3 {
     font-size: 20px;
