@@ -9,7 +9,7 @@ export const DownloadButton = ({ children }: IDownloadButton) => {
     <ButtonContainer>
       {children}
       <a
-        href="https://drive.google.com/file/d/1V3iLhQ2BweMA1NT0_m-UrxMfrK8v0FNY/view?usp=sharing"
+        href="https://drive.google.com/file/d/1zJrIu3m8OaK5rAiOWn42UuG7WvymiFnP/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
