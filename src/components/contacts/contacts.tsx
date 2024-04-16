@@ -48,8 +48,12 @@ export const Contacts = () => {
             <ContactImg src="assets/linkedin.png" alt="react"></ContactImg>
           </ContactImgDiv>
           <ContactLinkDiv>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              linkidin
+            <a
+              href="https://www.linkedin.com/in/elizabeth-medvedeva12/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              /elizabeth-medvedeva12/
             </a>
           </ContactLinkDiv>
         </ContactContainer>
